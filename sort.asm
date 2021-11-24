@@ -19,7 +19,9 @@ sort:
     jmp loop1
 
 loop1:                  ; Loop externo
+
     mov EBX, 0          ; Zerando EBX (Contador do Loop Interno = j)
+    jmp .loop2
 
     .loop2:
 
@@ -33,6 +35,8 @@ loop1:                  ; Loop externo
 
         mov [EDX+EBX*4], EAX        ; SWAP
         mov [EDX+EBX*4 + 4], ECX
+
+	jmp .endLoop2
 
     .endLoop2:
 

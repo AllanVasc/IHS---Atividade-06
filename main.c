@@ -8,12 +8,12 @@ int main(){
     int *v;         // Ponteiro para o Vetor
     int size = 0;   // Tamanho do Vetor
 
-    printf("Digite o tamanho do vetor!'\n");
+    printf("Digite o tamanho do vetor:\n");
     scanf("%d", &size);
 
     v = (int*) malloc(size*sizeof(int)); // Alocação Dinamica para o vetor
 
-    printf("Digite os elementos do vetor\n");
+    printf("Digite os elementos do vetor:\n");
     for(int i = 0; i < size; i++){
         scanf("%d", &v[i]);
     }
