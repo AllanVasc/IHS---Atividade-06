@@ -1,0 +1,4 @@
+# Não enviar para o Git os arquivos .o
+# Não enviar o arquivo binário 
+*.o
+teste
